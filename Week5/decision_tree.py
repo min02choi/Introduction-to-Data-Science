@@ -17,22 +17,22 @@ def get_child_entropy(p, e):
     return ent
 
 ### parent entropy
-parent_p = [1/5, 4/5]
+parent_p = [2/6, 4/6]
 
 e_parent = get_entropy(parent_p)
 print("e_parent: ", e_parent)
 
 ### child total entropy
-percent = [5/6, 1/6]
-entropy = [0.7219, 0]
+percent = [2/12, 10/12]
+entropy = [1, 0.9709]
 
 e_child = get_child_entropy(percent, entropy)
 print("e_child: ", e_child)
 
 ### information gain
 # information_gain = e_parent - e_child
-temp_p = 0.9282
-temp_c = 0.6015
+temp_p = 0.9798
+temp_c = 0.9757
 information_gain = temp_p - temp_c
 print(information_gain)
 
